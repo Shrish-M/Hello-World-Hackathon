@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins&display=swap');
+
+body {
+    background-color: black;
+}
+
+.tiles {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Two rows */
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    gap: 3em;
+    padding: 2em;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+
+.gold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    height: 200px; /* Define the height of the tile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px; /* Text size */
+    border-radius: 1em;
+    background-color: #CEB888;
+    box-shadow: 5px 5px 5px #615843c0;
+    cursor: pointer;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.tile:hover {
+    transform: scale(1.007);
+    opacity: 80%;
+}
+
+.tile a {
+    color: white;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.earhart {
+    background-image: url("images/earhart.jpeg");
+}
+
+.hillenbrand {
+    background-image: url("images/hillenbrand.jpeg");
+}
+@media (max-width: 600px) {
+    .tiles {
+        display: flex;
+        flex-direction: column;
+    }
+}
